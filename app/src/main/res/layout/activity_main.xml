@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:textAlignment="center"
+    android:fillViewport="false"
+    android:background="#6484c6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Push up"
+        android:id="@+id/textView_pushup"
+        android:textSize="12dp"
+        android:layout_below="@+id/pushup_icon"
+        android:layout_alignEnd="@+id/pushup_icon"
+        android:textAlignment="center"
+        android:textColor="#ffaf7d" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sit up"
+        android:id="@+id/textView_situp"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/textView_pushup"
+        android:layout_alignStart="@+id/situp_icon"
+        android:layout_below="@+id/situp_icon"
+        android:layout_alignEnd="@+id/situp_icon"
+        android:textAlignment="center"
+        android:textColor="#ffaf7d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Squats"
+        android:id="@+id/textView_squats"
+        android:textSize="12dp"
+        android:layout_above="@+id/row_situp"
+        android:textColor="#ffaf7d"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/squats_icon"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Leg-lift"
+        android:id="@+id/textView_leglift"
+        android:textSize="12dp"
+        android:layout_below="@+id/leglift_icon"
+        android:layout_alignStart="@+id/textView_pushup"
+        android:layout_alignEnd="@+id/leglift_icon"
+        android:textColor="#ffaf7d"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Plank"
+        android:id="@+id/textView_plank"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/textView_jumpingjacks"
+        android:layout_alignStart="@+id/textView_situp"
+        android:layout_alignEnd="@+id/plank_icon"
+        android:textColor="#ffaf7d"
+        android:textAlignment="center" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jumping Jacks"
+        android:id="@+id/textView_jumpingjacks"
+        android:textSize="12dp"
+        android:layout_below="@+id/jumpingjacks_icon"
+        android:layout_alignParentEnd="true"
+            android:textColor="#ffaf7d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pull up"
+        android:id="@+id/textView_pullup"
+        android:textSize="12dp"
+        android:layout_below="@+id/pullup_icon"
+        android:layout_alignStart="@+id/textView_leglift"
+        android:layout_alignEnd="@+id/row_leglift"
+        android:textAlignment="center"
+        android:textColor="#ffaf7d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cycling"
+        android:id="@+id/textView_cycling"
+        android:textSize="12dp"
+        android:layout_below="@+id/cycling_icon"
+        android:layout_alignEnd="@+id/row_cycling"
+        android:layout_alignStart="@+id/row_cycling"
+        android:textAlignment="center"
+        android:textColor="#ffaf7d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Walking"
+        android:id="@+id/textView_walking"
+        android:textSize="12dp"
+        android:layout_above="@+id/row_cycling"
+        android:layout_alignStart="@+id/row_squats"
+        android:layout_alignEnd="@+id/row_walking"
+        android:textAlignment="center"
+        android:textColor="#ffaf7d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Jogging"
+            android:id="@+id/textView"
+            android:textSize="12dp"
+            android:layout_below="@+id/jogging_icon"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView_pullup"
+            android:textAlignment="center"
+            android:textColor="#ffaf7d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Swimming"
+            android:id="@+id/textView_swimming"
+            android:textSize="12dp"
+            android:layout_below="@+id/swimming_icon"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:textAlignment="center"
+            android:textColor="#ffaf7d" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Stair-climbing"
+        android:id="@+id/textView_stairclimbing"
+        android:textSize="12dp"
+        android:layout_above="@+id/row_stairclimbing"
+            android:layout_below="@+id/stairclimbing_icon"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:textColor="#ffaf7d" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_cal"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_calories"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/MainLayout"
+            android:layout_toEndOf="@+id/row_leglift"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calories"
+            android:id="@+id/cal"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:layout_marginEnd="34dp"
+            android:layout_below="@+id/num_cal"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/row_pushup"
+        android:layout_above="@+id/leglift_icon"
+        android:layout_alignEnd="@+id/pushup_icon"
+        android:textAlignment="center">
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_pushup"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Reps"
+            android:id="@+id/reps_pushup"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_situp"
+        android:layout_alignEnd="@+id/textView_situp"
+        android:layout_below="@+id/textView_situp"
+        android:layout_alignStart="@+id/row_cycling">
+
+        <EditText
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_situp"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Reps"
+            android:id="@+id/reps_situp"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_squats"
+        android:weightSum="1"
+        android:layout_alignTop="@+id/row_situp"
+        android:layout_alignStart="@+id/row_jumpingjacks"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_squats"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Reps"
+            android:id="@+id/reps_squats"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_leglift"
+        android:layout_below="@+id/textView_leglift"
+        android:layout_alignStart="@+id/row_pushup"
+        android:layout_toStartOf="@+id/calories"
+        android:layout_alignEnd="@+id/row_jogging">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_leglift"
+            android:textSize="12dp"
+            android:layout_weight="0.10"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_leglift"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_plank"
+        android:layout_below="@+id/textView_plank"
+        android:layout_alignStart="@+id/textView_plank"
+        android:layout_alignEnd="@+id/textView_plank">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_plank"
+            android:textSize="12dp"
+            android:layout_weight="0.02"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_plank"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_jumpingjacks"
+        android:layout_above="@+id/walking_icon"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_jumpingjacks"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_jumpingjacks"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_pullup"
+        android:layout_below="@+id/textView_pullup"
+        android:layout_alignStart="@+id/row_leglift"
+        android:weightSum="1"
+        android:layout_above="@+id/jogging_icon"
+        android:layout_alignEnd="@+id/textView_pullup">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_pullup"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:hint="# of"
+            android:layout_above="@+id/textView_swimming"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Reps"
+            android:id="@+id/reps_pullup"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/min_jogging"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_cycling"
+        android:layout_below="@+id/textView_cycling"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_cycling"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_cycling"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_walking"
+        android:layout_below="@+id/textView_walking"
+        android:layout_alignStart="@+id/walking_icon"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_walking"
+            android:textSize="12dp"
+            android:layout_weight="0.03"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_walking"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_jogging"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_jogging"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:hint="# of"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/row_jogging"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_jogging"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/row_swimming"
+            android:layout_below="@+id/jogging_icon"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_stairclimbing"
+            android:layout_alignStart="@+id/stairclimbing_icon"
+            android:layout_below="@+id/textView_swimming"
+            android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_stairclimbing"
+            android:textSize="12dp"
+            android:layout_weight="0.02"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:layout_below="@+id/textView_pushup"
+            android:layout_alignParentStart="true"
+            android:hint="# of"
+            android:textColor="#fa4b48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes"
+            android:id="@+id/min_stairclimbing"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView_squats"
+            android:layout_toEndOf="@+id/textView_leglift"
+            android:textAlignment="center"
+            android:textColor="#fa4b48" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/pushup_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/pushup_icon"
+        android:scaleType="fitXY"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/row_cal"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/situp_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/situp_icon"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/textView_pushup"
+        android:layout_alignStart="@+id/textView_cycling" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/squats_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/squats_icon"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/textView_squats"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="false" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/leglift_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/leglift_icon"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/row_situp"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/plank_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/plank_icon"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/textView_plank"
+        android:layout_alignStart="@+id/situp_icon" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/jumpingjacks_icon"
+        android:background="#6484c6"
+        android:src="@mipmap/jumpingjacks_icon"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/leglift_icon"
+        android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/pullup_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/pullup_icon"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/row_leglift"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/cycling_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/cycling_icon"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/row_plank"
+            android:layout_alignStart="@+id/plank_icon" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/walking_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/walking_icon"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/textView_pullup"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/stairclimbing_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/stairsclimbing_icon"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@+id/jogging_icon"
+            android:layout_alignStart="@+id/textView_jumpingjacks" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/jogging_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/jogging_icon"
+            android:scaleType="fitXY"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/row_cycling" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/swimming_icon"
+            android:background="#6484c6"
+            android:src="@mipmap/swimming_icon"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@+id/stairclimbing_icon"
+            android:layout_alignStart="@+id/cycling_icon" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/textView_swimming"
+            android:layout_alignStart="@+id/row_cycling"
+            android:layout_alignEnd="@+id/row_situp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/n_swimming"
+                android:textSize="12dp"
+                android:layout_weight="0.07"
+                android:textAlignment="center"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:hint="# of"
+                android:layout_toStartOf="@+id/textView_cycling"
+                android:layout_below="@+id/textView_pullup"
+                android:textColor="#fa4b48" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Minutes"
+                android:id="@+id/textView_swimming"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:textSize="12dp"
+                android:layout_below="@+id/row_situp"
+                android:textAlignment="center"
+                android:textColor="#fa4b48" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/calories"
+            android:src="@mipmap/calories_icon"
+            android:scaleType="center"
+            android:layout_above="@+id/pushup_icon"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Weight"
+            android:textAlignment="center"
+            android:weightSum="1"
+            android:layout_alignTop="@+id/calories"
+            android:layout_toEndOf="@+id/textView_cycling">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/n_weight"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:layout_below="@+id/MainLayout"
+                android:layout_toEndOf="@+id/row_leglift"
+                android:hint="# of"
+                android:textColor="#fa4b48"
+                android:phoneNumber="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="lb"
+                android:id="@+id/textView_weight"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_marginEnd="34dp"
+                android:layout_below="@+id/num_cal"
+                android:layout_alignParentEnd="true"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="#fa4b48" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
