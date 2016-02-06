@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Push up"
+        android:text="Pushup"
         android:id="@+id/textView_pushup"
         android:textSize="12dp"
         android:layout_below="@+id/pushup_icon"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Sit up"
+        android:text="Situp"
         android:id="@+id/textView_situp"
         android:textSize="12dp"
         android:layout_alignBottom="@+id/textView_pushup"
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Pull up"
+        android:text="Pullup"
         android:id="@+id/textView_pullup"
         android:textSize="12dp"
         android:layout_below="@+id/pullup_icon"
@@ -175,9 +175,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/row_cal"
         android:textAlignment="center"
+        android:paddingLeft="30dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:paddingLeft="30dp">
+        android:layout_alignParentStart="true">
 
         <EditText
             android:layout_width="wrap_content"
@@ -802,8 +802,8 @@
             android:id="@+id/Weight"
             android:textAlignment="center"
             android:weightSum="1"
-            android:layout_alignTop="@+id/calories"
-            android:layout_toEndOf="@+id/textView_cycling">
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/situp_icon">
 
             <EditText
                 android:layout_width="wrap_content"
