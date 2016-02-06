@@ -1,6 +1,6 @@
 # PROG 01: Crunch Time
 
-Briefly describe your app here.
+Calverter is a calorie burner conversion app that allows to convert amount of calories into an equivalent amount of all exercises and vice-versa depending on how much the weight is. Please see the video demo below to get more detail information on how the app goes.
 
 ## Authors
 
